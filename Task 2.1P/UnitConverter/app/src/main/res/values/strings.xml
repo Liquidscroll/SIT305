@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">UnitConverter</string>
+    <string name="input_hint">Enter Number to Convert</string>
+    <string name="title_img_desc">Unit Converter App Banner</string>
+    <string name="src_text">Source Unit</string>
+    <string name="dest_text">Destination Unit</string>
+    <string name="button_text">Convert!</string>
+    <string name="invalid_input">Invalid Input.</string>
+    <string name="no_input">Please enter a value.</string>
+    <string name="conv_format">%.6f</string>
+
+    <string-array name="length_units_array">
+        <item>Inch</item>
+        <item>Foot</item>
+        <item>Yard</item>
+        <item>Mile</item>
+        <item>Millimetre</item>
+        <item>Centimetre</item>
+        <item>Metre</item>
+        <item>Kilometre</item>
+    </string-array>
+    <string-array name="weight_units_array">
+        <item>Pound</item>
+        <item>Ounce</item>
+        <item>Ton</item>
+        <item>Gram</item>
+        <item>Kilogram</item>
+    </string-array>
+    <string-array name="temp_units_array">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+    <string-array name= "conversions_array">
+        <item>Length</item>
+        <item>Weight</item>
+        <item>Temperature</item>
+    </string-array>
+</resources>
