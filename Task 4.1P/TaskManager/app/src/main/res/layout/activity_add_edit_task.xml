@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_edit_task_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_brown"
+    android:importantForAutofill="noExcludeDescendants"
+    android:paddingTop="16dp"
+    tools:context=".AddEditTaskActivity">
+
+    <ImageView
+        android:id="@+id/app_title_image"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/taskmanager"
+        android:contentDescription="@string/title_image_of_app_reading_task_manager"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <EditText
+        android:id="@+id/add_task_title"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="@string/title_hint"
+        android:inputType="textCapSentences"
+        android:textColor="@color/pale_yellow"
+        android:textColorHint="@color/pale_yellow"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/app_title_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintTop_toBottomOf="@id/add_task_title"
+        app:layout_constraintBottom_toTopOf="@id/add_task_due"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:maxHeight="400dp"
+        android:id="@+id/text_scroll_view">
+<!--&lt;!&ndash;        android:layout_below="@id/add_task_title"&ndash;&gt;-->
+
+
+
+        <EditText
+            android:id="@+id/add_task_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/description_hint"
+            android:inputType="textMultiLine"
+            android:textColor="@color/pale_yellow"
+            android:textColorHint="@color/pale_yellow"
+            android:textSize="24sp"/>
+    </ScrollView>
+    <TextView
+        android:id="@+id/add_task_due"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/text_scroll_view"
+        android:gravity="center_vertical"
+        android:hint="@string/due_date_hint"
+        android:background="@android:drawable/edit_text"
+        android:backgroundTint="@color/deep_brown"
+        android:textColor="@color/pale_yellow"
+        android:textColorHint="@color/pale_yellow"
+        android:textSize="24sp"
+        android:onClick="showDatePicker"
+        app:layout_constraintTop_toBottomOf="@id/text_scroll_view"
+        app:layout_constraintBottom_toTopOf="@id/save_task_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <Button
+        android:id="@+id/save_task_button"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_task_due"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/muted_forest_green"
+        android:onClick="saveTask"
+        android:text="@string/save_task_hint"
+        android:textColor="@color/white"
+        app:iconTint="@color/pale_yellow"
+        app:layout_constraintTop_toBottomOf="@id/add_task_due"
+        app:layout_constraintBottom_toTopOf="@id/bottom_nav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_lime_green"
+        app:menu="@menu/main_bottom_nav_menu"
+        app:itemActiveIndicatorStyle="@color/nav_item_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_tasks"
+        android:title="@string/menu_tasks_string"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_view_list_24" />
+
+    <item
+        android:id="@+id/nav_add_tasks"
+        android:title="@string/menu_add_tasks"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_add" />
+
+    <item
+        android:id="@+id/nav_edit_task"
+        android:title="@string/menu_edit_task"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_add" />
+</menu>

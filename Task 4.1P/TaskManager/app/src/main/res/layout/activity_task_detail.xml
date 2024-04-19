@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="16dp"
+    android:background="@color/deep_brown"
+    android:id="@+id/task_detail_layout">
+    <ImageView
+        android:id="@+id/app_title_image"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/taskmanager"
+        android:contentDescription="@string/title_image_of_app_reading_task_manager" />
+    <TextView
+        android:id="@+id/task_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_title_image"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        android:textColor="@color/pale_yellow"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_below="@id/task_detail_title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="16dp">
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:orientation="vertical">-->
+
+
+
+            <TextView
+                android:id="@+id/task_detail_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/pale_yellow"
+                android:layout_marginBottom="8dp"/>
+
+
+<!--        </LinearLayout>-->
+    </ScrollView>
+    <TextView
+        android:id="@+id/task_detail_due"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/scrollView"
+        android:layout_above="@id/bottom_nav"
+        android:textSize="14sp"
+        android:textColor="@color/pale_yellow"
+        android:layout_marginBottom="8dp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_lime_green"
+        app:menu="@menu/main_bottom_nav_menu"
+        app:itemActiveIndicatorStyle="@color/nav_item_color"/>
+
+</RelativeLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:paddingTop="16dp"-->
+<!--    android:background="@color/deep_brown">-->
+<!--    <ImageView-->
+<!--        android:id="@+id/app_title_image"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        app:srcCompat="@drawable/taskmanager"-->
+<!--        android:contentDescription="@string/title_image_of_app_reading_task_manager" />-->
+<!--    <ScrollView-->
+<!--        android:id="@+id/scrollView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_above="@id/bottom_nav"-->
+<!--        android:layout_marginLeft="16dp"-->
+<!--        android:layout_marginRight="16dp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:paddingBottom="16dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/task_detail_title"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="24sp"-->
+<!--                android:textColor="@color/pale_yellow"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_marginBottom="8dp"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/task_detail_desc"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textColor="@color/pale_yellow"-->
+<!--                android:layout_marginBottom="8dp"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/task_detail_due"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="14sp"-->
+<!--                android:textColor="@color/pale_yellow"-->
+<!--                android:layout_marginBottom="8dp"/>-->
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/bottom_nav"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:background="@color/light_lime_green"-->
+<!--        app:menu="@menu/main_bottom_nav_menu"-->
+<!--        app:itemActiveIndicatorStyle="@color/nav_item_color"/>-->
+
+<!--</RelativeLayout>-->
+
