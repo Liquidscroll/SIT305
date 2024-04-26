@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="news_title_default">News Title Here…</string>
+    <string name="news_source_default">News Source Here…</string>
+    <string name="top_stories_header">Top Stories</string>
+    <string name="news_title">News</string>
+    <string name="url_string"><a href="%s">%s</a></string>
+    <string name="news_no_desc">No Description Found</string>
+    <string name="related_stories_heading">Related Stories</string>
+    <string name="news_details_heading">News Details</string>
+</resources>
