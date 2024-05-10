@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">LostAndFoundApp</string>
+    <string name="button_text_show_items"><![CDATA[SHOW ALL LOST & FOUND ITEMS]]></string>
+    <string name="button_text_new_advert">CREATE A NEW ADVERT</string>
+    <string name="text_app_name"><![CDATA[LOST & FOUND]]></string>
+    <string name="text_lost_found_items"><![CDATA[LOST & FOUND ITEMS]]></string>
+    <string name="post_type_text">Post Type:</string>
+    <string name="lost_radio_text">Lost</string>
+    <string name="found_radio_text">Found</string>
+    <string name="name_label">Name:</string>
+    <string name="enter_name_hint">Enter Name</string>
+    <string name="phone_label">Phone:</string>
+    <string name="phone_number_hint">Enter Phone Number</string>
+    <string name="description_label">Description:</string>
+    <string name="add_new_advert_heading">Add New Item Advert</string>
+    <string name="item_desc_hint">Enter Item Description</string>
+    <string name="date_label">Date:</string>
+    <string name="enter_date_hint">Enter Date</string>
+    <string name="location_label">Location:</string>
+    <string name="enter_location_hint">Enter Location</string>
+    <string name="save_btn_text">SAVE</string>
+    <string name="btn_remove_text">REMOVE</string>
+    <string name="error_text">Error</string>
+    <string name="default_list_advert_name">Advert Name</string>
+    <string name="no_items_text">No Items Lost or Found!</string>
+    <string name="zero_days_text">Today</string>
+</resources>
