@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF"/>
+    <stroke android:width="2dp" android:color="#000000"/>
+    <corners android:radius="10dp"/>
+</shape>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>
+    <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+        <item>
+            <shape>
+                <solid android:color="#FFFFFF"/> &lt;!&ndash; White background &ndash;&gt;
+                <stroke android:width="2dp" android:color="#000000"/> &lt;!&ndash; Black border &ndash;&gt;
+                <corners android:radius="10dp"/> &lt;!&ndash; Rounded corners &ndash;&gt;
+            </shape>
+        </item>
+        <item android:top="-2dp" android:bottom="1dp" android:left="-2dp" android:right="-2dp">
+            <shape>
+                <solid android:color="@android:color/transparent"/>
+                <stroke android:width="1dp" android:color="@android:color/darker_gray"/> &lt;!&ndash; Gray bottom line &ndash;&gt;
+            </shape>
+        </item>
+    </layer-list>-->

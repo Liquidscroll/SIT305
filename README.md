@@ -6,3 +6,4 @@ Includes tasks:
 - 4.1P
 - 5.1C
 - 7.1P
+- 8.1C
