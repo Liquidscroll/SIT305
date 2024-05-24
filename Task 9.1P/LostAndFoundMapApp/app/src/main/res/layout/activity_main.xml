@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="40dp"
+    android:paddingEnd="40dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/light_back"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="@string/text_app_name"
+        android:textStyle="bold"
+        android:textColor="@color/dark_text"
+        android:textSize="25sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:width="270dp"
+        android:id="@+id/btn_new_ad"
+        android:text="@string/button_text_new_advert"
+        android:textColor="@color/light_text"
+        android:backgroundTint="@color/dark_accent"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:width="270dp"
+        android:id="@+id/btn_show_ads"
+        android:text="@string/button_text_show_items"
+        android:textColor="@color/light_text"
+        android:backgroundTint="@color/dark_accent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="270dp"
+        android:id="@+id/btn_show_map"
+        android:text="@string/btn_text_show_on_map"
+        android:textColor="@color/light_text"
+        android:backgroundTint="@color/dark_accent"/>
+
+</LinearLayout>
